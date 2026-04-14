@@ -20,4 +20,5 @@ import numpy as np
 data = { 'marks':[10,20,30,40,np.nan],'gender':['f','m','f','f','m']}
 df = pd.DataFrame(data)
 print(df)
-df['marks']
+df['marks'] = df['marks'].fillna(df['marks'].mean())
+print(df)

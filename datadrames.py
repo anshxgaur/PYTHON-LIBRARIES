@@ -41,5 +41,29 @@ import numpy as np
 data = { 'marks':[10,20,30,40,50],'gender':['f','m','f','f',np.nan]}
 df = pd.DataFrame(data)
 df['gender'] = df['gender'].fillna(df['gender'].mode()[0])
-print(df)
+
+#    marks gender
+# 0     10      f
+# 1     20      m
+# 2     30      f
+# 3     40      f
+# 4     50      f
+
+
+# making box plot of the data
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
+data = { 
+    'marks': [10, 20, 30, 40, 200]
+}
+df = pd.DataFrame(data)
+# Box plot
+plt.boxplot(df['marks'])
+plt.title("Box Plot of Marks")
+plt.ylabel("Marks")
+plt.show()
+
+
+
 

@@ -12,3 +12,12 @@ mode_val = df['gender'].mode()
 print(mean_val)
 print(median_val)
 print(mode_val)
+
+# change of dataframe:
+
+import pandas as pd
+import numpy as np
+data = { 'marks':[10,20,30,40,np.nan],'gender':['f','m','f','f','m']}
+df = pd.DataFrame(data)
+print(df)
+df['marks']

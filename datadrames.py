@@ -7,4 +7,8 @@ print(df)
 # in order to find the mean of this data:
 df = pd.DataFrame(data)
 mean_val = df['marks'].mean()
+median_val = df['marks'].median()
+mode_val = df['gender'].mode()
 print(mean_val)
+print(median_val)
+print(mode_val)
